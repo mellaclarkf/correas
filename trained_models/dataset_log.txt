@@ -1,0 +1,5 @@
+[2025-09-03 13:04:39] Creado: dataset1
+[2025-09-04 00:24:16] Creado: dataset2
+[2025-09-04 00:24:16] Copiados desde dataset1 a dataset2: {'train': 0, 'valid': 0, 'test': 0, 'total': 0} (solo_pares_nuevos=True)
+[2025-09-04 00:43:36] Creado: dataset3
+[2025-09-04 00:43:36] Copiados desde dataset2 a dataset3: {'train': 8, 'valid': 6, 'test': 6, 'total': 20} (solo_pares_nuevos=True)
