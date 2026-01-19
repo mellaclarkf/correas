@@ -1,0 +1,94 @@
+####################################
+# Python / Conda / Anaconda
+####################################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Entornos
+.env
+.venv
+venv/
+env/
+conda-env/
+*.conda
+
+# Jupyter
+.ipynb_checkpoints/
+
+####################################
+# VS Code
+####################################
+.vscode/
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+####################################
+# Sistema operativo
+####################################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+####################################
+# Logs / temporales
+####################################
+*.log
+logs/
+temp/
+tmp/
+
+####################################
+# OpenCV / procesamiento de video
+####################################
+Imagenes/
+VideosProcesados/
+frames/
+output/
+captures/
+
+####################################
+# Modelos entrenados / ML
+####################################
+trained_models/*.pt
+trained_models/*.pkl
+trained_models/*.onnx
+trained_models/*.engine
+
+####################################
+# Resultados y exportaciones
+####################################
+export/
+reports/
+*.csv
+*.xlsx
+
+####################################
+# MySQL / dumps
+####################################
+*.sql~
+*.dump
+*.bak
+
+####################################
+# PyInstaller
+####################################
+build/
+dist/
+*.spec
+
+####################################
+# Cache librerías científicas
+####################################
+.cache/
+.mypy_cache/
+.pytest_cache/
+
+####################################
+# Archivos de usuario
+####################################
+*.user
+*.swp
+*.tmp
