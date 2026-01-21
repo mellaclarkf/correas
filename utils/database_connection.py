@@ -5,7 +5,7 @@ USER = 'Fernando'
 PASSWORD = 'vision2025.'
 HOST = '127.0.0.1'
 DATABASE = 'vision'
-PORT = 3306
+PORT = 3307
 
 DATABASE_URL = (
     f"mysql+mysqlconnector://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}"

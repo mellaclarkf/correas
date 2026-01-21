@@ -1,3 +1,5 @@
+Version Python 3.12.11
+
 Hasta aquí se ha realizado lo siguiente:
 - Se ha guardado datos en tabla history
 - Se ha realizado simulación de predicción
@@ -151,60 +153,6 @@ Hasta aquí se ha realizado lo siguiente:
         - Pone variable de entorno services\boundingbox_service.py
 
 ------------
-
-- CRUD usuario
-- Poner bien seccion distancia en ventana date_popup (Defecto encontrado por Rodrigo)
-
-    - Lo ultimo conversado Mario:
-        * En informe (lo pide al reentrenar)
-            + Graficos de las fallas
-            + Accuracy
-            + Grafico antes y despues rendimiento
-            + Podriamos agregar el dibujo de la correa con la cantidad de fallas por tramo
-                (abría que ver si esto es factible)
-              o talvez un listado con el numero y tipo de falla por tramo 
-            + El usuario debería poder poner notas o ir agregando notas al informe
-        * Dibujo Correa. 
-            + dibujar bien correa
-            + Marcador de distancia segun foto
-            + poner una linea entre los tramos
-
-        * Crear tabla de tramos asociados a una correa con las distancias de cada tramo
-            - se debe crear ventana para el ingreso de parámetros de settings de la correa
-            - Velocidad de la correa Constante
-            - velocidad de inicio de correa
-            - Numero de tramos
-            - Distancia entre tramos
-        * Crear ventana para la modificacion de usuarios.
-        * Informe de modificaciones segun log
-
-
-
-- Lo que se modificará: 
-    - cuando caiga en la misma imagen que la falla, se debe marcar en el treview.
-    - Cambio de encabezado del treeview Ancho, Largo y no x1, x2 etc.
-    - Realizar el reporte con el numero de fallas encontrados. esto debe ser dinámico al treeview
-    ------------------------------------------------------------------------------------------------    
-    - Redibujar el rectangulo verde al realizar zoom
-    - Histograma o pareto interactivo al agregar mas defectos (informe)
-    - Que guarde inmediatamente el rectangulo seleccionado en el video e imagen
-    - Agregar la tabla "Mediciones" con (id, id_nombre video, id_fecha:hora,nombre correa, usuario, )
-    - Me falta que al eliminar la fila, también se elimine la imagen
-    - botón de informe e informe
-    - Incorporar Recarga de Cristian Aguilera
-	
-
-- Falta aquí:
-  * guardar los datos del pkl
-  * botón de informe
-  * falta manejo de errores en caso de imagen mal cargada
-1- guardar un primer modelo con su Accuracy en base de datos y en carpeta.
-2- Que cada vez que se llame a train_and_predict llame a este modelo pkl y 
-    realice la prediccion segun este modelo.
-3- Que al presionar el boton recargar, guarde los datos modificados por el usuario 
-    en la bd (esto ya esta hecho) y  
-    se realice un nuevo modelo, pero este nuevo modelo solo se guardará en la bd y 
-    en la carpeta si su Accurracy es mejor  
 
 
 /factories                       # Fábricas de objetos y estrategias

@@ -7,6 +7,24 @@
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
+-- 1. Crear base de datos
+CREATE DATABASE IF NOT EXISTS vision
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+-- Crear usuario específico para localhost
+CREATE USER IF NOT EXISTS 'Fernando'@'localhost'
+IDENTIFIED BY 'vision2025.';
+
+-- Dar permisos sobre la BD
+GRANT ALL PRIVILEGES ON vision.* TO 'Fernando'@'localhost';
+
+FLUSH PRIVILEGES;
+
+-- 4. Seleccionar la base de datos
+USE vision;
+-- 
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
